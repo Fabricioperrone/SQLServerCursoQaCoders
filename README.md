@@ -195,7 +195,7 @@ DROP TABLE TabelaTeste
 ![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/c069fbc9-1bed-47ee-83f9-052868fbc497)
 
 
-## Truncate:
+## TRUNCATE:
 ```
 --Para deletar apenas os regsitros da tabela
 TRUNCATE TABLE TabelaTeste	
