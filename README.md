@@ -203,5 +203,15 @@ TRUNCATE TABLE TabelaTeste
 ![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/8563b26c-67f7-4c23-9014-af719186c5d3)
 
 
+## SP_HELP
+
+Sintaxe:
+```
+--Lista as características de uma tabela
+EXEC sp_help 'Person'; --Tabela Person
+```
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/d4291334-987f-4a9f-86c6-162655db18a0)
+
+No item destacado em vermelho, nos mostra a associação (relacionamento) entre as tabelas ‘Person’ e ‘Address’.
 
 
