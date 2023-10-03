@@ -164,4 +164,44 @@ Após o comando executado, deve ficar assim suas tabelas:
 
 ![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/96b20ee2-c0f7-4dd4-85ec-ad3ce4bd670e)
 
- 
+## DROP e TRUNCATE
+
+Vamos criar uma tabela de teste para excluir:
+
+Sintaxe:
+
+```
+CREATE TABLE TabelaTeste(
+	TesteID int,
+	Nome varchar(255),
+	SobreNome varchar(255)
+);
+```
+
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/21a5069c-dd18-4893-a2dc-ccaf352a3122)
+
+Sucesso!
+
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/1293254b-ca56-4e9a-a307-168674b2ab23)
+
+
+##  Comando DROP TBALE:
+
+```
+--Vamos deletar a tabela
+DROP TABLE TabelaTeste
+```
+
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/c069fbc9-1bed-47ee-83f9-052868fbc497)
+
+
+## Truncate:
+```
+--Para deletar apenas os regsitros da tabela
+TRUNCATE TABLE TabelaTeste	
+```
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/8563b26c-67f7-4c23-9014-af719186c5d3)
+
+
+
+
