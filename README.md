@@ -214,4 +214,39 @@ EXEC sp_help 'Person'; --Tabela Person
 
 No item destacado em vermelho, nos mostra a associação (relacionamento) entre as tabelas ‘Person’ e ‘Address’.
 
+## ALTER TABLE
+
+Sintaxe:
+```
+--Alterar as caracteristicas de uma tabela
+ALTER TABLE Person
+ADD COD INT;
+```
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/80bc697a-7a15-499b-8b79-d6edb1df42f7)
+
+
+## ALTER TABLE:
+
+```
+--Remover uma coluna da tabela
+ALTER TABLE Person
+DROP COLUMN cod;
+```
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/230d06d7-1472-4de2-b4c0-893ccbadd9e6)
+
+
+## ALTER TABLE, alterar uma coluna de uma tabela, sintaxe:
+
+```
+--Alterar a característica de uma coluna
+ALTER TABLE Person
+ALTER COLUMN State char(2);
+```
+
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/1ff0f9f2-e0ae-41a1-9c26-dd5ba2f59232)
+
+
+
+
+
 
