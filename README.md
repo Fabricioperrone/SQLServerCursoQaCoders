@@ -197,7 +197,7 @@ DROP TABLE TabelaTeste
 
 ## TRUNCATE:
 ```
---Para deletar apenas os regsitros da tabela
+--Para deletar apenas os registros da tabela
 TRUNCATE TABLE TabelaTeste	
 ```
 ![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/8563b26c-67f7-4c23-9014-af719186c5d3)
