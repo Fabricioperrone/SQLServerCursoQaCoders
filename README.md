@@ -246,7 +246,93 @@ ALTER COLUMN State char(2);
 ![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/1ff0f9f2-e0ae-41a1-9c26-dd5ba2f59232)
 
 
+##  NOT NULL
+
+Sintaxe:
+
+```
+CREATE TABLE Vehicle(
+	VehicleID int NOT NULL,
+	Model varchar(20) NOT NULL,
+	YearVeicle Date NOT NULL,
+	FOREIGN KEY (VehicleID) REFERENCES Person(PersonID)
+```
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/d8e5f3e8-e312-4af1-a9b1-97df3ac449e3)
+
+A tabela não irá receber valores nulos, para verificar usamos o comando: EXEC sp_help 'Vehicle'  
 
 
 
 
+## UNIQUE
+Sintaxe:
+
+```
+CREATE TABLE Mail(
+	MailID int NOT NULL,
+	PersonID int NOT NULL,
+	Mail varchar(255),
+	UNIQUE (MailID) -- Significa que o campo MailID não pode ser duplicado
+);
+```
+
+
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/dd1392d8-4de1-403d-93d6-684d734b5f38)
+
+Unique significa que os campos “MailID” , “PhoneID” e “PersonID” não podem ser duplicados, eles são únicos na tabela.
+
+
+
+
+## PRIMARY
+Sintaxe:
+
+```
+--DEFINIR CHAVE PRIMARIA
+CREATE TABLE Pet(
+	PetID int NOT NULL PRIMARY KEY,
+	NamePet varchar(30) NOT NULL,
+	NamePerson varchar(150) NOT NULL,
+	Age int 
+);
+```
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/2b5b4a38-13ac-4070-8110-37627a3dec56)
+
+No exemplo acima após uma consulta com o comando “EXEC sp_help”, podemos ver que a primary key da tabela Pet é PetID.
+
+
+
+## IDENTITY
+
+Como definir o incremento automático no SQLServer?
+O SQL usa a palavra-chave IDENTITY para executar um recurso de incremento automático. 
+Sintaxe:
+
+```
+CREATE TABLE Orders(
+	OrderID int IDENTITY(1,1) PRIMARY KEY, -- Auto incremento
+	PersonID int NOT NULL,
+	DescripitionOrder varchar(255),
+	ValueOrder float
+);
+```
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/ef95460d-37a8-4987-86cb-9cfb813d5fbd)
+
+
+No exemplo acima, o valor inicial é de 1 e será incrementado 1  para cada novo registro. 
+
+- Dica: Para especificar que a coluna “PaymentID” deve começar no valor 1 e aumentar em 5, altera-a para IDENTITY(1, 5).
+
+```
+CREATE TABLE Payment(
+	PaymentID int IDENTITY(1,5) PRIMARY KEY, -- Auto incremento
+	OrderID int NOT NULL,
+	PersonID int NOT NULL,
+	DescripitionOrder varchar(255),
+	ValueOrder float
+);
+```
+
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/81b6f059-b2ff-4610-baa3-ab92771fa362)
+
+Resultado.
