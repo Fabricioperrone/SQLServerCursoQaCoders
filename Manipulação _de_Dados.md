@@ -9,6 +9,8 @@ INSERT INTO Person
 VALUES (1, 'William','Alves', 'email@email.com.br', '11999999999', '321456789', 'QA');
  
 ```
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/e3ca4c0e-174e-4454-a92c-eaf255bfea6e)
+
 
 Após executar o comando deve retornar uma mensagem como na imagem acima.
 
@@ -27,22 +29,15 @@ Sintaxe:
 SELECT * FROM Person
 
 ```
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/c663f6e9-a99e-460b-a3c7-e34be0a872a1)
+
+
 Após a execução do comando o gerenciador de banco de dados irá exibir os dados da tabela selecionada. No exemplo temos dois registros inseridos na tabela Person.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 ## SELECT com condição:
+
 Sintaxe:
 ```
 --Selecionar com uma condição
@@ -50,9 +45,7 @@ SELECT * FROM Person
 WHERE PersonID = 1;
 ```
 
- 
-
-
+ ![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/319d367e-a933-4b02-80d3-62ce04da2fa9)
 
 
 
@@ -64,6 +57,7 @@ Sintaxe:
 --Selecionar dados especificos
 SELECT PersonID, FirstName, Phone FROM Person
 ```
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/af7efc4a-986a-4f9a-a58b-67ee23321ce2)
 
  
 
@@ -75,7 +69,7 @@ WHERE PersonID = 1
 AND state = 'QA'
 ```
  
-
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/537549b3-7e7f-4410-b4c7-15feb5780708)
 
 
 ## SELECT com dados específicos passando uma condição, trazendo todos os campos. 
@@ -87,8 +81,7 @@ WHERE PersonID = 1
 AND state = 'QA'
 ```
 
-
-
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/98e4ee66-2343-43a9-8f17-5e8fa711c16f)
 
 
 
@@ -100,6 +93,9 @@ UPDATE Person
 SET FirstName = 'João'
 WHERE PersonID = 2
 ```
+
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/a40cf008-ef4a-4f8e-9fd5-43eb04c9f9d5)
+
 Vamos explicar o esse comado faz: ATUALIZE Person Grave FirstName = João CONDIÇÃO cujo o PersonID seja = 2
 
 
@@ -110,10 +106,9 @@ Sintaxe:
 DELETE Person
 WHERE PersonID = 1
 ```
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/c2ef67d0-3a5a-4ced-a390-49a3db0cd758)
 
 Agora temos apenas um registro na tabela Person.
-
-
 
 
 
@@ -126,7 +121,8 @@ DELETE Person
 WHERE PersonID = 2
 AND FirstName = 'João'
 ```
- 
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/63753bfb-8ec1-4d02-84c2-0b44d63319ae)
+
 Agora não temos mais nenhum registro na  tabela.
 
 
@@ -141,8 +137,7 @@ SELECT TOP 2 * FROM Person --Usando condição
 WHERE state = 'QA'
 ```
 
-
-
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/d7b03838-abb7-4575-808b-f787d78953b8)
 
 
 
@@ -154,6 +149,8 @@ Sintaxe:
 --Selecionar os 2 primeiros registros da tabela com ordenação decrescente
 SELECT TOP 2 * FROM Person ORDER BY 1 DESC
 ```
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/e4ca9d01-9a9f-4111-873a-18a66ab1a213)
+
 
 ## Selecionar os dois primeiros registros da tabela com ordenação crescente.
 
@@ -162,15 +159,10 @@ Sintaxe:
 --Selecionar os 2 primeiros registros da tabela com ordenação crescente
 SELECT TOP 2 * FROM Person ORDER BY 3 ASC
 ```
- 
+
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/bc36e0ef-cda3-433d-927e-4fff4116cc3a)
+
 Ordena pela 3 coluna.
-
-
-
-
-
-
-
 
 
 
@@ -182,6 +174,9 @@ Sintaxe:
 --Selecionar os 2 primeiros registros da tabela com ordenação crescente pelo nome da coluna
 SELECT TOP 2 * FROM Person ORDER BY PersonID ASC
 ```
+
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/4dc7db37-7a84-4607-99a1-aeab11719c33)
+
  
 
 
@@ -193,6 +188,7 @@ Sintaxe:
 --Seleciona os registros por porcentagem
 SELECT TOP 50 PERCENT * FROM Person
 ```
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/eafea5a0-9438-4160-93b5-5f268229681a)
 
 Retorna 50% das colunas.
 
@@ -209,7 +205,8 @@ Sintaxe:
 SELECT TOP 50 PERCENT LastName FROM Person
 ```
 
- 
+ ![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/01b34679-70df-4edf-b3dc-3cfa7ba23585)
+
 
 
 
@@ -246,7 +243,9 @@ VALUES (1, 10.10, 'Carteira de couro', 'PENDENTE');
 
 Executamos uma consulta na tabela através do comando SELECT.
 SELECT * FROM Price
- 
+
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/c6877bde-06fc-478a-aa4f-da4aa51eb51d)
+
 
 
 
@@ -259,7 +258,9 @@ Sintaxe:
 SELECT MIN(PriceValue) AS 'Valor Mínimo'
 FROM Price
 ```
- 
+
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/5da28779-b175-472b-9e80-b6eae55fd43f)
+
 
 
 
@@ -277,9 +278,9 @@ SELECT MAX(PriceValue) AS 'Valor do Produto'--Alias
 FROM Price
 ```
 
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/c3763c38-648c-40df-a585-a8489269e2fe)
+
  
-
-
 ## Soma os valores, onde o STATUS é PAGO.
 
 Sintaxe:
@@ -290,13 +291,7 @@ SELECT SUM(PriceValue) AS 'Soma de todos os valores'
 FROM Price
 WHERE STATUS = 'PAGO'
 ```
-
- 
-
-
-
-
-
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/193dc6e0-b6fc-4421-95a7-fce7d0855c1f)
 
 
 ## Conta o número de registros.
@@ -309,19 +304,7 @@ SELECT COUNT(PersonID)
 FROM Price
 WHERE PersonID = 1
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/acfea7a7-5d68-4441-b808-521f277ac8fb)
 
 
 
@@ -339,37 +322,11 @@ FROM Person
 INNER JOIN Price ON Person.PersonID = Price.PriceID
 WHERE Person.PersonID =1
 ```
- 
+
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/bf77ddda-444d-4715-9d7c-bcc9a9bf840f)
+
 
 - INNER JOIN: Retornam registros que possuem valores correspondentes em ambas as tabelas.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -382,7 +339,7 @@ FROM Person
 LEFT JOIN Price ON Person.PersonID = Price.PriceID
 WHERE Person.PersonID =1
 ```
-
+![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/0c49b1ad-5044-453b-a89b-fa072f8f2414)
  
 - Retornam os todos os registros da tabela a esquerda e os registros correspondentes da tabela direita.
 
