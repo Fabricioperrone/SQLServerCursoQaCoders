@@ -336,3 +336,6 @@ CREATE TABLE Payment(
 ![image](https://github.com/Fabricioperrone/SQLServerCursoQaCoders/assets/69866913/81b6f059-b2ff-4610-baa3-ab92771fa362)
 
 Resultado.
+
+
+# Continuação: [Manipulação de dados](./Manipulação%20_de_Dados.md)
